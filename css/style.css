@@ -1,0 +1,35 @@
+#dateDisplay{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+#clock{
+    background-color: grey;
+    padding: 3rem;
+    /* height: 30rem; */
+    border-radius: 25px;
+
+    max-width: 75%;
+    
+}
+
+#stopButton{
+    color: rgb(63, 14, 14);
+    font-size: large;
+    width: 10rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#timeDisplay{
+    background-color: black;
+    color: white;
+    font-size: 15rem;
+}
+
+#flexSwitchCheckDefault{
+    width: 5rem;
+    height: 3rem;
+}
