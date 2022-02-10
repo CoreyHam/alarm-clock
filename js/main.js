@@ -5,45 +5,45 @@ const date = new Date();
 var year = date.getFullYear();
 var month = date.getMonth() + 1;
 if (month == 1) {
-    month = "Jan"
+    month = "January"
 }
 if (month == 2) {
-    month = "Feb"
+    month = "Febuary"
 }
 if (month == 3) {
-    month = "Mar"
+    month = "March"
 }
 if (month == 4) {
-    month = "Apr"
+    month = "April"
 }
 if (month == 5) {
     month = "May"
 }
 if (month == 6) {
-    month = "Jun"
+    month = "June"
 }
 if (month == 7) {
-    month = "Jul"
+    month = "July"
 }
 if (month == 8) {
-    month = "Aug"
+    month = "August"
 }
 if (month == 9) {
-    month = "Sep"
+    month = "September"
 }
 if (month == 10) {
-    month = "Oct"
+    month = "October"
 }
 if (month == 11) {
-    month = "Nov"
+    month = "November"
 }
 if (month == 12) {
-    month = "Dec"
+    month = "December"
 }
 var day = date.getDate();
 
 
-var dateString = month + " " + day + " " + year;
+var dateString = month + " " + day + ", " + year;
 
 document.getElementById("dateDisplay").innerHTML = dateString;
 
@@ -87,3 +87,14 @@ function updateTime() {
     
 }
 setInterval(updateTime, 1000);
+
+// Alarms
+
+function newAlarmButton(){
+    document.getElementById('screenDimmer').style.visibility = "visible";
+    console.log("it works")
+}
+function closeNewAlarm(){
+    document.getElementById('screenDimmer').style.visibility = "hidden";
+    console.log("it works")
+}

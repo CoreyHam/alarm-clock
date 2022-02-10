@@ -1,6 +1,52 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+i{
+    color: black;
+}
+
+#newAlarmIcon{
+    font-size: 10rem;
+}
+
+button{
+    border: none;
+    background-color: inherit;
+    color: none;
+}
+
+#closeButton{
+    display: flex;
+}
+
+i:hover{
+    color: grey;
+}
+
 #dateDisplay{
     font-size: 5rem;
     margin-bottom: 5rem;
+}
+
+#screenDimmer{
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.904);
+    width: 100%;
+    height: 100%;
+    
+}
+
+#addTimer{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    width: 50rem;
+    height: 30rem;
+    border-radius: 25px;
+    
 }
 
 #clock{
@@ -8,7 +54,7 @@
     padding: 3rem;
     /* height: 30rem; */
     border-radius: 25px;
-
+    
     max-width: 75%;
     
 }
