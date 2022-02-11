@@ -41,8 +41,9 @@ i:hover{
 
 #addTimer{
     background-color: grey;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     width: 50rem;
     height: 30rem;
     border-radius: 25px;
@@ -59,7 +60,8 @@ i:hover{
     
 }
 
-#stopButton{
+#resetButton{
+    visibility: hidden;
     color: rgb(63, 14, 14);
     font-size: large;
     width: 10rem;
@@ -78,4 +80,16 @@ i:hover{
 #flexSwitchCheckDefault{
     width: 5rem;
     height: 3rem;
+}
+
+#alarmDisplay{
+    visibility: hidden;
+    max-width: 75%;
+    margin-top: 5rem;
+    border-radius: 25px;
+    background-color: red;
+}
+
+#addNewAlarmText{
+    padding: 3rem;
 }
