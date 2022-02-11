@@ -94,7 +94,6 @@ i:hover{
 
 #alarmDisplay{
     visibility: hidden;
-    background-color: rgba(0, 0, 0, 0.171);
     /* max-width: 75%; */
     font-size: 3rem;
     /* margin-top: 5rem; */
