@@ -31,17 +31,11 @@
 
                 <h1 id="addNewAlarmText">Add New Alarm</h1>
                 <div id="inputSection">
-                    <h3>Time</h3><input id="timeInput" type="text" placeholder="00:00">
-                    <input type="radio" class="btn-check" name="options-outlined" id="success-outlined"
-                        autocomplete="off" checked>
-                    <label class="btn btn-outline-secondary" for="success-outlined">AM</label>
-
-                    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined"
-                        autocomplete="off">
-                    <label class="btn btn-outline-secondary" for="danger-outlined">PM</label>
+                    <h3>Time</h3><input id="timeInput" type="time" placeholder="00:00">
+                    
                 </div>
-                <button onclick="return closeNewAlarm()">Cancel</button>
-                <button onclick="return submitNewAlarm()">Set Alarm</button>
+                <button id="cancelButton" onclick="return closeNewAlarm()">Cancel</button>
+                <button id="setAlarmButton" onclick="return submitNewAlarm()">Set Alarm</button>
 
             </center>
         </div>
@@ -49,18 +43,18 @@
 
     <center>
 
-        <div id="dateDisplay">
-            Feb 10th 2022
-        </div>
         <button onclick="return resetButtonFunc()" id="resetButton" type="button" class="btn btn-danger"><strong>RESET</strong></button>
         <div id="clock">
             <div id="timeDisplay">
             </div>
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
-                    data-bs-toggle="tooltip" data-bs-placement="top" title="Toggle 24 Hour Clock">
-
+                data-bs-toggle="tooltip" data-bs-placement="top" title="Toggle 24 Hour Clock">
+                
             </div>
+        </div>
+        <div id="dateDisplay">
+            Feb 10th 2022
         </div>
         <div id="alarmDisplay">
             Sample Text
